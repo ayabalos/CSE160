@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Change a point color</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="400" height="400">
+    Please use a browser that supports "canvas"
+    </canvas>
+
+    <script src="webgl-utils.js"></script>
+    <script src="webgl-debug.js"></script>
+    <script src="cuon-utils.js"></script>
+    <script src="ColoredPoints.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Point.js"></script>
+    <script src="circle.js"></script>
+    <script src="tiger.js"></script>
+
+    <div>
+    <label for="sliderRed">Red:</label>
+    <input type="range" id="sliderRed" min="0" max="1" step= "0.01" value="1">
+    </div>
+    <div>
+    <label for="sliderGreen">Green:</label>
+    <input type="range" id="sliderGreen" min="0" max="1" step= "0.01" value="1">
+    </div>
+    <label for="sliderBlue">Blue:</label>
+    <input type="range" id="sliderBlue" min="0" max="1" step= "0.01" value="1">
+    </div>
+    </div>
+    <label for="size">Size:</label>
+    <input type="range" id="size" min="1" max="45" step= "1" value="1">
+    </div>
+    <div>
+      <label for="clearCanvas">Clear Canvas</label>
+      <input type="button" id="clearCanvas" onclick="clearCanvas()">
+    </div>
+    <button type="button" id="pointButton">Draw points</button>
+    <button type="button" id="TriangleButton">Draw triangles</button>
+    <button type="button" id="CircleButton">Draw circles</button>
+    <div>
+    <div>
+      <label for="segCount">Circle segment Count (5-20)</label>
+      <input type="range" id="segCount" min="5" max="20" step="1" value="10">
+    </div>
+  </body>
+</html>
